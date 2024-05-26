@@ -7,7 +7,7 @@ const HomePage = () => {
         <body>  
             <div>
              <h1 className="text-3xl">
-                Properties
+                Home
              </h1>
              <Link href='/properties'>Go to Properties</Link>
             </div>
