@@ -3,10 +3,13 @@ import '@/assets/styles/globals.css';
 
 const MainLayout = ({ children }) => {
   return (
-    <div>
-        {children}
-    </div> 
-
+    <html lang='en'>
+      <body>
+        <div>
+            {children}
+        </div>
+      </body>
+    </html> 
   )
 }
 
