@@ -1,7 +1,8 @@
 import React from 'react'
-import Images from 'next/image'
+import Image from 'next/image'
 import Logo from '@/assets/images/logo-white.png'
 import ProfileDefault from '@/assets/images/profile.png'
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
@@ -38,7 +39,9 @@ const Navbar = () => {
         <div
           className="flex flex-1 items-center justify-center md:items-stretch md:justify-start"
         >
-          <a className="flex flex-shrink-0 items-center" href="/index.html">
+          <Link 
+          className="flex flex-shrink-0 items-center" 
+          href="/">
             <Image
               className="h-10 w-auto"
               src={Logo}
@@ -49,25 +52,27 @@ const Navbar = () => {
               >
                 PropertyPulse
             </span>
-          </a>
+          </Link>
           <div className="hidden md:ml-6 md:block">
             <div className="flex space-x-2">
-              <a
-                href="/index.html"
+              <Link
+                href="/"
                 className="text-white bg-black hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
                 >
-                    Home
-                </a>
-              <a
-                href="/properties.html"
+                  Home
+              </Link>
+              <Link
+                href="/properties"
                 className="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                >Properties
-                </a>
-              <a
-                href="/add-property.html"
+                >
+                  Properties
+              </Link>
+              <Link
+                href="/properties/add"
                 className="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                >Add Property
-                </a>
+                >
+                  Add Property
+              </Link>
             </div>
           </div>
         </div>
@@ -86,7 +91,10 @@ const Navbar = () => {
         <div
           className="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0"
         >
-          <a href="messages.html" className="relative group">
+          <Link 
+            href="messages.html" 
+            className="relative group"
+            >
             <button
               type="button"
               className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -113,7 +121,7 @@ const Navbar = () => {
             >
               2
             </span>
-          </a>
+          </Link>
           <div className="relative ml-3">
             <div>
               <button
