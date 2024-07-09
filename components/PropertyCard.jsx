@@ -1,13 +1,18 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
-const PropertyCard = () => {
+const PropertyCard = ({property}) => {
   return (
     
     <div class="rounded-xl shadow-md relative">
-    <img
-      src="images/properties/a1.jpg"
+    <Image
+      src="/images/properties/a1.jpg"
       alt=""
       class='w-full h-auto rounded-t-xl'
+      height={0}
+      width={0}
+      sizes='100vw'
     />
     <div class="p-4">
       <div class="text-left md:text-center lg:text-left mb-6">
