@@ -43,3 +43,5 @@ http://localhost:3000/properties/1
 http://localhost:3000/properties/add
 
 
+connectioin string: mongodb+srv://jissmon476:4eee5Bu6iGot77cl@cluster0.iu4y3h6.mongodb.net/
+
